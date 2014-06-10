@@ -1,0 +1,4 @@
+if (PHP_SP != "no") {
+	EXTENSION("SP", "sp.c");
+}
+
