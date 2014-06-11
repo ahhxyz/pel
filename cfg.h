@@ -1,2 +1,2 @@
 #include "php.h"
-extern zend_class_entry *cfg_ce;
+//extern zend_class_entry *cfg_ce;
