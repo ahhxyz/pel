@@ -18,7 +18,7 @@
 #include "php_ini.h"
 #include "ext/standard/info.h"
 #include "php_pel.h"
-#include "SingletonPattern.h"
+#include "SingletonPattern.c"
 
 
 static int le_pel;
@@ -101,7 +101,7 @@ zend_module_entry pel_module_entry = {
 	PHP_RINIT(pel),		/* Replace with NULL if there's nothing to do at request start */
 	PHP_RSHUTDOWN(pel),	/* Replace with NULL if there's nothing to do at request end */
 	PHP_MINFO(pel),
-	PHP_PEF_VERSION,
+	PHP_PEL_VERSION,
 	STANDARD_MODULE_PROPERTIES
 };
 
