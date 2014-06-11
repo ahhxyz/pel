@@ -6,7 +6,7 @@
  */
 
 #include "php.h"
-#include "pel_cfg.h"
+#include "cfg.h"
 
 static zend_function_entry cfg_methods[]={
     {NULL,NULL,NULL}
