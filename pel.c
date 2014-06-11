@@ -84,14 +84,14 @@ PHP_FUNCTION(confirm_pel_compiled)
 
 /**
  *定义获取配置的快捷方法
- */
+ 
 PHP_FUNCTION(C){
     
 }       
-
+*/
 const zend_function_entry pel_functions[] = {
 	PHP_FE(confirm_pel_compiled,	NULL)		/* For testing, remove later. */
-        PHP_FE(C,NULL)        
+        //PHP_FE(C,NULL)        
 	PHP_FE_END	/* Must be the last line in pel_functions[] */
 };
 
