@@ -18,8 +18,8 @@
 #include "php_ini.h"
 #include "ext/standard/info.h"
 #include "php_pel.h"
-#include "cfg.h"
-#include "cfg.c"
+#include "pel_cfg.h"
+
 
 
 static int le_pel;
