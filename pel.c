@@ -77,7 +77,7 @@ PHP_FUNCTION(confirm_pel_compiled)
 		return;
 	}
 
-	len = pelprintf(&strg, 0, "<title>安装成功！</title><h1 style=\"color:#2C5EAA;margin-top:200px;margin-left:18%;\">%.78s安装成功！，这是传进来的参数： %.78s </h1>", "pel", arg);
+	len = spprintf(&strg, 0, "<title>安装成功！</title><h1 style=\"color:#2C5EAA;margin-top:200px;margin-left:18%;\">%.78s安装成功！，这是传进来的参数： %.78s </h1>", "pel", arg);
 	RETURN_STRINGL(strg, len, 0);
 }
 
