@@ -28,12 +28,13 @@ zend_class_entry *cfg_ce;
 
 PHP_MINIT_FUNCTION(pel)
 {
+    /*
     zend_class_entry ce;
     
     //初始化config类
     INIT_CLASS_ENTRY(ce, "cfg",cfg_methods);
     cfg_ce = zend_register_internal_class(&ce TSRMLS_CC);  
-    
+    */
     
     
     return SUCCESS;
