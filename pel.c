@@ -18,7 +18,8 @@
 #include "php_ini.h"
 #include "ext/standard/info.h"
 #include "php_pel.h"
-#include "SingletonPattern.c"
+#include "cfg.h"
+#include "cfg.c"
 
 
 static int le_pel;
@@ -29,8 +30,8 @@ PHP_MINIT_FUNCTION(pel)
     zend_class_entry ce;
     
     //初始化config类
-    INIT_CLASS_ENTRY(ce, "config",config_methods);
-    config_ce = zend_register_internal_class(&ce TSRMLS_CC);  
+    INIT_CLASS_ENTRY(ce, "cfg",cfg_methods);
+    cfg_ce = zend_register_internal_class(&ce TSRMLS_CC);  
     
     
     
