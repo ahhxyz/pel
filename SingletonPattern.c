@@ -6,3 +6,7 @@
  */
 
 #include "SingletonPattern.h"
+
+static zend_function_entry Config_methods[]={
+    {NULL,NULL,NULL}
+}
