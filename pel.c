@@ -18,25 +18,16 @@
 #include "php_ini.h"
 #include "ext/standard/info.h"
 #include "php_pel.h"
-//#include "cfg.c"
 
 
 
 static int le_pel;
 
-zend_class_entry *cfg_ce;
+
 
 PHP_MINIT_FUNCTION(pel)
 {
-    /*
-    zend_class_entry ce;
-    
-    //初始化config类
-    INIT_CLASS_ENTRY(ce, "cfg",cfg_methods);
-    cfg_ce = zend_register_internal_class(&ce TSRMLS_CC);  
-    */
-    
-    
+        
     return SUCCESS;
 }
 
@@ -109,7 +100,7 @@ zend_module_entry pel_module_entry = {
 };
 
 
-#ifdef COMPILE_DL_PEF
+#ifdef COMPILE_DL_PEL
 ZEND_GET_MODULE(pel)
 #endif
 
